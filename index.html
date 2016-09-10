@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>magic 8 ball</title>
+  <link rel="stylesheet" type="text/css" href="magic8ball.css">
+</head>
+    <body>
+    <div class ="container">
+      <div class="sidebar"></div>
+        <div id="eight-ball">
+          <!-- draw magic eight ball -->
+          <div id="ball-shape"></div>
+          <div id="top-accent" class="top"></div>
+          <div id="eight" class="top">8</div>   
+          <div id="bottom-accent" class="bottom"></div>
+          <div id="answer" class="bottom">  </div> 
+        </div>
+        <div class="sidebar"></div>
+
+        <div>
+            <form id="magic-eight-ball" method="">
+                Ask a question: <input type="text" name="question" id="question" size="70" />
+                <input type="submit" name="submit" value="Ask" />
+            </form>
+
+            <button id="reset-btn" class="bottom"> Ask Again?</button>
+        </div>  
+    </div>
+    
+  <script type="text/javascript" src="jquery-1.12.3.js"></script>
+  <script type="text/javascript" src="magic8ball.js"></script>
+
+    </body>
+</html>
