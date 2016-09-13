@@ -1,5 +1,5 @@
 $(document).ready(function() {
- 
+ 	preventDefault();
   console.log("document loaded"); //process check
 
   $("#magic-eight-ball").submit(function(event) { //form click
