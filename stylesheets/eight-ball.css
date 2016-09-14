@@ -1,3 +1,10 @@
+div#eight-ball-container{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin:0 -10em;
+}
+
 div#ball-shape {
   border-radius: 150px;
   height: 300px;
