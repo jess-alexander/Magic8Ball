@@ -3,7 +3,8 @@ $(document).ready(function() {
 
   $("#magic-eight-ball").submit(function(event) { //form click
     console.log("inside click function"); //process check
-    event.preventDefault();
+    event.preventDefault(event);
+
     $('.bottom').show();
     $('.top').hide();
     var answers = [
