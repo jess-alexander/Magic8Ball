@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Magic8ball : Application to immitate a Magic 8 ball">
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/eight-ball.css">
-
     <title>Magic8ball</title>
-  </head>
+</head>
 
-  <body>
-
+<body>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jess-alexander/Magic8Ball">View on GitHub</a>
-
-          <h1 id="project_title">Magic8ball</h1>
-          <h2 id="project_tagline">Application to immitate a Magic 8 ball</h2>
-
+            <a id="forkme_banner" href="https://github.com/jess-alexander/Magic8Ball">View on GitHub</a>
+            <h1 id="project_title">Magic8ball</h1>
+            <h2 id="project_tagline">Application to immitate a Magic 8 ball</h2>
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jess-alexander/Magic8Ball/zipball/master">Download this project as a .zip file</a>
+                <a class="zip_download_link" href="https://github.com/jess-alexander/Magic8Ball/zipball/master">Download this project as a .zip file</a>
             </section>
         </header>
     </div>
-
     <!-- MAIN CONTENT -->
     <div class="outer">
-      <section class="inner">
-        <div id="eight-ball-container">
-          <div class="">
-            <!-- draw magic eight ball -->
-            <div id="ball-shape" class="eight-ball"></div>
-            <div id="top-accent" class="eight-ball"></div>
-            <div id="eight" class="">8</div>   
-            <div id="bottom-accent" class="eight-ball"></div>
-            <div id="answer" class="eight-ball">  </div> 
-          </div>
-
-          <div id="form-wrapper">
-            <form id="magic-eight-ball" method="GET">
-                Ask a question: <input type="text" name="question" id="question" size="70" />
-                <input type="submit" name="submit" value="Ask" />
-            </form>
-
-            <button id="reset-btn" class="bottom"> Ask Again?</button>
-          </div> 
-
-        </div>
-
-
-
-      </section>
+        <section class="inner">
+            <div id="eight-ball-container">
+                <div class="">
+                    <!-- draw magic eight ball -->
+                    <div id="ball-shape" class="eight-ball"></div>
+                    <!-- "top" of the ball (white circle with 8) -->
+                    <div id="top-accent" class="top eight-ball"></div>
+                    <div id="eight" class="top">8</div>
+                    <!-- "bottom" of the ball (purple circle with response) -->
+                    <div id="bottom-accent" class="bottom eight-ball"></div>
+                    <div id="answer" class="bottom eight-ball"> </div>
+                </div>
+                <div id="form-wrapper">
+                    <form id="magic-eight-ball" method="GET">
+                        <label for="question">Ask a question:</label>
+                        <input type="text" name="question" id="question" size="70" />
+                        <input type="submit" name="submit" value="Ask" />
+                    </form>
+                    <button id="reset-btn" class="bottom"> Ask Again?</button>
+                </div>
+            </div>
+        </section>
     </div>
-
-
-    
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascripts/main.js"></script>
-  </body>
+</body>
+
 </html>
