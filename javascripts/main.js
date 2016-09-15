@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     console.log("document loaded"); //process check
-    // $('.bottom').hide();
 
     $("#magic-eight-ball").submit(function(event) { //form click
         console.log("inside click function"); //process check
