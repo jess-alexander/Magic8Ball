@@ -42,13 +42,13 @@ div#bottom-accent {
     height: 170px;
     width: 170px;
     background-color: #4d0099;
-    /*display: none;*/
+    display: none;
 }
 
 div#answer {
     position: absolute;
-    left: 160px;
-    top: 230px;
+    left: 13%;
+    top: 37%;
     text-align: center;
     border-radius: 50px;
     height: 100px;
@@ -61,4 +61,5 @@ div#answer {
     position: relative;
     top: 50%;
     left: 40%;
+    display: none;
 }
